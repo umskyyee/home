@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	max-width: 700px;
+	margin: auto;
+	box-sizing: border-box;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: 20px;
+}
+
+header>ul{
+	display: flex;
+}
+header>ul>a{
+	list-style-type: none;
+	margin-left: 1.5rem;
+	font-size: 20px;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+header>ul>a:first-child{
+	border-bottom: 5px solid white;
+}
+header>ul>a:hover{
+	border-bottom: 5px solid white;
+}
+h1,h2,p{
+	color: white;
+}
+body{
+	background-image: url("img/sky.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100vw auto;
+}
+img{
+	padding: 25px;
+}
+h2{
+	text-align: center;
+	padding: 30px;
+	font-size: 27px;
+	letter-spacing: 5.5px;
+}
+h1{
+	font-size: 35px;
+}
+section>p{
+	line-height: 1.7;
+	word-break: keep-all;
+	text-align: center;
+	letter-spacing: 0.8px;
+	font-size: 17px;
+	border: 1px solid white;
+	padding: 16px;
+}
+article{
+	padding: 10px;
+	display: inline-flex;
+}
+footer{
+	padding: 10px;
+}
+.c1{
+	position: absolute;
+	background-color: white;
+	top: 250px;
+	left: 100px;
+	width: 350px;
+	height: 350px;
+	border-radius: 200px;	
+	list-style-type: none;
+	text-align: center;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+}
+.c2{
+	position: absolute;
+	background-color: white;
+	top: 250px;
+	left: 575px;
+	width: 350px;
+	height: 350px;
+	border-radius: 200px;
+	list-style-type: none;
+	text-align: center;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+}
+.c3{
+	position: absolute;
+	background-color: white;
+	top: 250px;
+	left: 1050px;
+	width: 350px;
+	height: 350px;
+	border-radius: 200px;
+	list-style-type: none;
+	text-align: center;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+}
+
+@media screen and (max-aspect-ratio: 4/3) {
+	body{
+		background-size: auto 100vh;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.c1{
+		position: absolute;
+		background-color: white;
+		top: 250px;
+		left: 100px;
+		width: 250px;
+		height: 250px;
+	}
+	.c2{
+		position: absolute;
+		background-color: white;
+		top: 550px;
+		left: 100px;
+		width: 250px;
+		height: 250px;
+	}
+	.c3{
+		position: absolute;
+		background-color: white;
+		top: 850px;
+		left: 100px;
+		width: 250px;
+		height: 250px;
+	}
+	article{
+		display: line-flex;
+		flex-direction: column;
+	}
+	img{
+		width: 400px;
+		height:250px;
+	}
+	section>p{
+		font-size: 13px;
+	}
+	header{
+		flex-direction: column;
+	}
+}
